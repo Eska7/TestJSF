@@ -12,7 +12,7 @@ public class Main {
 	private Message messageBean;
 	
 	private String message;
-	private Molecule m = new Molecule(1, "QWER");
+	private Molecule m = new Molecule(1, "CO2");
 	
 	public Main() {
 		System.out.println("TestJSF started");
@@ -21,7 +21,7 @@ public class Main {
 	public String getMessage() {
 		if(messageBean != null)
 			message = messageBean.getMessage();
-		return message + " " + m.presentation();
+		return message + "  " + m.presentation();
 	}
 	
 	public void setMessageBean(Message message){
